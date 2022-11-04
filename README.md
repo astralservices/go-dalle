@@ -20,9 +20,9 @@ import (
 
 func main() {
     apiKey := os.Getenv("DALLE_API_KEY")
-	client := dalle.NewClient(apiKey)
+    client := dalle.NewClient(apiKey)
 
-	data, err := client.Generate("A horse in an elevator", nil, nil, nil, nil)
+    data, err := client.Generate("A horse in an elevator", nil, nil, nil, nil)
 
     if err != nil {
         fmt.Println(err)
